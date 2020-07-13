@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".GroupChatActivity">
+
+    <include
+        android:id="@+id/group_bar_layout"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+
+    <ScrollView
+        android:id="@+id/chat_scow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_bar_layout"
+        android:layout_above="@id/myLinearLay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/encryptLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_lock"/>
+
+                <ImageView
+                    android:id="@+id/decryptLock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_unlock"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/groupchat_text_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#19a3fe"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="50dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/myLinearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_image_black_24dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/ic_camera" />
+
+        <EditText
+            android:id="@+id/write_group_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button8"
+            android:drawableEnd="@drawable/ic_thumb_up"
+            android:fontFamily="@font/salsa"
+            android:hint="Az..."
+            android:padding="9dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColorHint="#19a3fe" />
+
+        <ImageButton
+            android:id="@+id/send_msg_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/button7"
+            android:layout_marginEnd="3dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

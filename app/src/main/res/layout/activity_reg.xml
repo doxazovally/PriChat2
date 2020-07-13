@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".RegActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ppp" />
+
+    <LinearLayout
+        android:layout_width="206dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button4"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an account"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/salsa"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter your email"
+                android:fontFamily="@font/salsa"
+                app:met_textColor="@color/colorAccent"
+                app:met_floatingLabelTextColor="#35b729"
+                app:met_baseColor="#35b729"
+                android:textStyle="bold"
+                app:met_textColorHint="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColorHint="@color/colorAccent"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter your password"
+                app:met_textColor="@color/colorAccent"
+                app:met_floatingLabelTextColor="#35b729"
+                app:met_baseColor="#35b729"
+                android:fontFamily="@font/salsa"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                app:met_textColorHint="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#eaf2f3"
+                app:met_floatingLabel="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/encryCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Enter your encrypt key "
+                    app:met_textColor="@color/colorAccent"
+                    app:met_floatingLabelTextColor="#35b729"
+                    app:met_baseColor="#35b729"
+                    android:fontFamily="@font/salsa"
+                    android:inputType="textPassword"
+                    android:textStyle="bold"
+                    app:met_textColorHint="@color/colorAccent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#eaf2f3"
+                    app:met_floatingLabel="normal" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_btn"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttons"
+        android:textColor="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Signup"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/salsa"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:layout_weight="1"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:fontFamily="@font/salsa"
+        android:layout_marginStart="50dp"
+       android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/lbtn2"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
+            android:text="login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:fontFamily="@font/salsa"
+            android:background="@drawable/button5"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "710581857198",
+    "firebase_url": "https://prichat-16704.firebaseio.com",
+    "project_id": "prichat-16704",
+    "storage_bucket": "prichat-16704.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710581857198:android:98b847001d18b1e319f63f",
+        "android_client_info": {
+          "package_name": "com.team.prichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710581857198-fl9uurssc3lsoukng5e40q0nef13eb11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.team.prichat",
+            "certificate_hash": "30d27904ee2ce831c95acc49ea16b831bf15ad81"
+          }
+        },
+        {
+          "client_id": "710581857198-tudbedlkf7crq7q4963ikm0sdosmdgeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJyesB4SXWGR2PSvBbolq9Vw6-OQS-HIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710581857198-tudbedlkf7crq7q4963ikm0sdosmdgeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
